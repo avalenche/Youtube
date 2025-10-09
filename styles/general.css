@@ -1,9 +1,42 @@
 *,
 *::before,
-*::after,
-html,
-body {
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --background-color-white: #ffffff;
+  --text-color-white: #c2c2c2;
+  --text-color-black: #19202c;
+  --font-family: Mulish, sans-serif;
+  --font-size: 13px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--background-color-white);
+  color: var(--text-color-white);
+  font-family: var(--font-family);
+  height: 3000px;
+  min-height: 100vh;
+  line-height: 1.6;
+  padding-top: 84px;
+}
+
+img {
+  width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }

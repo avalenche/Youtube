@@ -3,21 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YouTube Redesign Concept" />
     <title>YouTube Redesign Concept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/home.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-left-section">
-        <button class="menu-button">☰</button>
-        <div class="logo">YouTube</div>
+        <button class="header-burger-menu-button">
+          <img src="icons/burger-menu-icon.svg" alt="Menu Icon" />
+        </button>
+        <a class="header-left-section-logo" href="#">
+          <img src="icons/youtube-logo-black-icon.svg" alt="YouTube Logo" />
+        </a>
       </div>
       <div class="header-center-section">
-        <input type="text" placeholder="Search" />
-        <button class="search-button">Search</button>
+        <input
+          id="search-bar"
+          name="search-bar"
+          class="search-bar"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="search-button">
+          <img src="icons/search-icon.svg" alt="Search Icon" />
+        </button>
       </div>
       <div class="header-right-section">
-        <div class="user-profile">User</div>
+        <button class="header-right-section-button">
+          <img src="icons/upload-icon.svg" alt="Upload Icon" />
+        </button>
+        <button class="header-right-section-button">
+          <img src="icons/youtube-apps-icon.svg" alt="Apps Icon" />
+        </button>
+        <button class="header-right-section-button">
+          <img src="icons/notifications-icon.svg" alt="Notifications Icon" />
+        </button>
+        <button class="header-right-section-button profile-button">
+          <img
+            class="user-profile"
+            src="img/current-user-picture.png"
+            alt="Profile Icon"
+          />
+        </button>
       </div>
     </header>
 

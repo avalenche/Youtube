@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  height: 84px;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--background-color-white);
+}
+.header-left-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 28px;
+  margin-right: 59px;
+}
+
+.header-burger-menu-button img {
+  height: 17px;
+}
+
+.header-left-section-logo {
+  display: flex;
+  align-items: center;
+}
+.header-left-section-logo img {
+  height: 25px;
+}
+
+.header-center-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 59px;
+}
+.search-bar {
+  color: var(--text-color-black);
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+  max-width: 830px;
+  background-color: rgba(235, 235, 235, 0.3);
+  padding-left: 23px;
+  border-radius: 22px;
+  border: none;
+}
+.search-bar::placeholder {
+  opacity: 0.4;
+  color: #30384c;
+}
+.search-button {
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  margin-left: -43px;
+  display: flex;
+  align-items: center;
+}
+
+.header-right-section {
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+  gap: 50px;
+  flex-shrink: 0;
+}
+.header-right-section-button {
+  display: flex;
+  align-items: center;
+  max-height: 40px;
+}
+.profile-button {
+  border-radius: 50%;
+}
+
+.user-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
