@@ -5,8 +5,9 @@
   padding: 20px 30px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 84px;
-  width: 100%;
   z-index: 100;
   background-color: var(--background-color-white);
 }
@@ -75,7 +76,24 @@
 .profile-button {
   border-radius: 50%;
 }
-
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 18px;
+  width: 18px;
+  background-color: var(--background-color-red);
+  border-radius: 50%;
+  color: var(--background-color-white);
+  font-size: 12px;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .user-profile {
   height: 40px;
   width: 40px;

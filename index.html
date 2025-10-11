@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header class="header">
@@ -43,8 +44,11 @@
         <button class="header-right-section-button">
           <img src="icons/youtube-apps-icon.svg" alt="Apps Icon" />
         </button>
-        <button class="header-right-section-button">
+        <button
+          class="header-right-section-button notifications-icon-container"
+        >
           <img src="icons/notifications-icon.svg" alt="Notifications Icon" />
+          <div class="notifications-counter">3</div>
         </button>
         <button class="header-right-section-button profile-button">
           <img
@@ -56,29 +60,181 @@
       </div>
     </header>
 
-    <aside class="navigation-bar">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Trending</li>
-          <li>Subscriptions</li>
-          <li>Library</li>
-        </ul>
-      </nav>
-      <section class="subscriptions">
-        <h2>Subscriptions</h2>
-        <ul>
-          <li>Channel 1</li>
-          <li>Channel 2</li>
-          <li>Channel 3</li>
-        </ul>
-      </section>
-      <div class="settings">
-        <button>Settings</button>
-      </div>
-    </aside>
-
     <main>
+      <aside class="sidebar">
+        <nav class="main-navigation">
+          <ul class="main-navigation-list-primary">
+            <li>
+              <a class="main-navigation-home" href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/home-icon.svg"
+                  alt="Home Icon"
+                />Home
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/trending-icon.svg"
+                  alt="Trending Icon"
+                />Trending</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/subscriptions-icon.svg"
+                  alt="Subscriptions Icon"
+                />Subscriptions</a
+              >
+            </li>
+          </ul>
+          <ul class="main-navigation-list-library">
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/library-icon.svg"
+                  alt="Library Icon"
+                />Library</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/history-icon.svg"
+                  alt="History Icon"
+                />History</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/watch-later-icon.svg"
+                  alt="Watch Later Icon"
+                />Watch Later</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/favorites-icon.svg"
+                  alt="Favorites Icon"
+                />Favorites</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/liked-videos-icon.svg"
+                  alt="Liked Videos Icon"
+                />Liked videos</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/music-icon.svg"
+                  alt="Music Icon"
+                />Music</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/games-icon.svg"
+                  alt="Games Icon"
+                />Games</a
+              >
+            </li>
+          </ul>
+          <button class="main-navigation-button-show-more">
+            <img
+              class="icon-navigation"
+              src="icons/arrow-down-icon.svg"
+              alt="Show More"
+            />Show More
+          </button>
+        </nav>
+        <section class="subscriptions">
+          <h2>Subscriptions</h2>
+          <ul class="subscriptions-list">
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/gussie-singleton.png"
+                  alt="user icon"
+                />Gussie Singleton</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/nora-francis.png"
+                  alt="user icon"
+                />Nora Francis</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/belle-briggs.png"
+                  alt="user icon"
+                />Belle Briggs</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/eunice-cortez.png"
+                  alt="user icon"
+                />Eunice Cortez</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/emma-hanson.png"
+                  alt="user icon"
+                />Emma Hanson</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/leah-berry.png"
+                  alt="user icon"
+                />Leah Berry</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="sidebar-settings-section">
+          <button>
+            <img
+              class="icon-navigation"
+              src="icons/settings-icon.svg"
+              alt="Settings Icon"
+            />Settings
+          </button>
+        </section>
+      </aside>
+
       <section class="content">
         <div class="video-grid-recomendations">
           <div class="video-card">

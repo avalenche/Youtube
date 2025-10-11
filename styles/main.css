@@ -1,0 +1,91 @@
+.sidebar {
+  width: 220px;
+  background-color: var(--background-color-white);
+  font-size: 16px;
+  color: #898989;
+  border-right: 1px solid #eee;
+  padding: 30px 20px;
+  position: fixed;
+  top: 84px;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-navigation a,
+.subscriptions a,
+.main-navigation button,
+.sidebar-settings-section button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.main-navigation a:hover,
+.main-navigation button:hover,
+.subscriptions a:hover,
+.sidebar-settings-section button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.main-navigation-list-primary {
+  margin-bottom: 40px;
+}
+.main-navigation .main-navigation-home {
+  color: var(--text-color-red);
+}
+.icon-navigation {
+  height: 20px;
+  width: 20px;
+  margin-right: 13px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color-black);
+  padding-left: 10px;
+  margin: 50px 0 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.sidebar button {
+  width: 100%;
+}
+
+.main-navigation-list-primary li:not(:last-child) {
+  padding-bottom: 8px;
+}
+
+.main-navigation-list-library li {
+  padding-bottom: 9px;
+}
+
+.subscriptions-list li:not(:last-child) {
+  padding-bottom: 3px;
+}
+
+.subscriptions-user-icon {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar-settings-section {
+  margin-top: 105px;
+}
