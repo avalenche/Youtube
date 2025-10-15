@@ -61,6 +61,7 @@
     </header>
 
     <main>
+      <!-- Aside -->
       <aside class="sidebar">
         <nav class="main-navigation">
           <ul class="main-navigation-list-primary">
@@ -158,11 +159,20 @@
             </li>
           </ul>
           <button class="main-navigation-button-show-more">
-            <img
-              class="icon-navigation"
-              src="icons/arrow-down-icon.svg"
-              alt="Show More"
-            />Show More
+            <span class="show-more-icon">
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                />
+              </svg>
+            </span>
+            Show More
           </button>
         </nav>
         <section class="subscriptions">
@@ -234,30 +244,525 @@
           </button>
         </section>
       </aside>
-
-      <section class="content">
-        <div class="video-grid-recomendations">
-          <div class="video-card">
-            <div class="video-thumbnail-container">
-              <img
-                class="video-thumbnail"
-                src="img/a-brief-historyh-of-creation.png"
-                alt="Video Thumbnail"
-              />
-              <div class="video-duration">4:15</div>
+      <!-- End Aside -->
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Video Section -->
+        <section class="video-section">
+          <div class="video-section-header">
+            <div class="video-author-info">
+              <div class="video-author-icon">
+                <img src="img/dollie-blair-icon.png" alt="Dollie Blair Icon" />
+              </div>
+              <h2 class="video-author-name">Dollie Blair</h2>
             </div>
-            <div class="video-info">
-              <h3 class="video-title">A Brief History Of Creation</h3>
-              <div class="channel-info">
-                <p class="video-stats">
-                  80k views <span>&#8226;</span> 3 days ago
-                </p>
-                <p class="author">Dollie Blair</p>
+            <div class="video-section-navigation-buttons">
+              <button class="left-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="right-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="video-cards-container">
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+          </div>
+        </section>
+        <!-- Recommended Video Section -->
+        <section class="recommended-video-section">
+          <div class="recommended-video-header">
+            <h2 class="recommended-video-title">Recommended</h2>
+            <div class="video-section-navigation-buttons">
+              <button class="left-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="right-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="video-cards-container">
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+          </div>
+        </section>
+        <!-- Recommended Channels -->
+        <section class="recommended-channels-section">
+          <div class="recommended-channels-header">
+            <div class="video-author-info">
+              <div class="video-author-icon">
+                <img src="img/dollie-blair-icon.png" alt="Dollie Blair Icon" />
+              </div>
+              <div class="video-author-text-container">
+                <h2 class="video-author-name">Food & Drink</h2>
+                <p>Recommended channel for you</p>
+              </div>
+            </div>
+            <div class="recommended-channels-actions">
+              <button class="subscribe-button">Subscribe 2.3m</button>
+              <div class="video-section-navigation-buttons">
+                <button class="left-arrow-button">
+                  <span>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button class="right-arrow-button">
+                  <span>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                      />
+                    </svg>
+                  </span>
+                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="video-cards-container">
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+          </div>
+        </section>
+      </div>
+      <!-- End Main Content -->
     </main>
   </body>
 </html>

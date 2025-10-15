@@ -9,7 +9,8 @@
 :root {
   --background-color-white: #ffffff;
   --background-color-red: #ff0000;
-  --text-color-white: #c2c2c2;
+  --text-color-white: #ffffff;
+  --text-color-grey: #c2c2c2;
   --text-color-black: #19202c;
   --text-color-red: #ff0000;
   --font-family: Mulish, sans-serif;
@@ -21,6 +22,7 @@ button {
   background: none;
   color: inherit;
   font-size: inherit;
+  font-family: inherit;
 }
 html {
   font-size: var(--font-size);
@@ -28,11 +30,12 @@ html {
 
 body {
   background-color: var(--background-color-white);
-  color: var(--text-color-white);
+  color: var(--text-color-grey);
   font-family: var(--font-family);
   min-height: 100vh;
   line-height: 1.6;
-  padding: 84px 0 0 220px;
+  padding: 104px 0 0 245px;
+  overflow-x: hidden;
 }
 
 img {
