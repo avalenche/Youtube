@@ -99,3 +99,61 @@
   width: 40px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1100px) {
+  .header {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .header-left-section {
+    gap: 15px;
+    margin-right: 20px;
+  }
+  .header-center-section {
+    margin-right: 20px;
+  }
+  .search-bar {
+    max-width: 100%;
+  }
+  .header-right-section {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .header {
+    padding: 10px 16px;
+  }
+  .header-center-section {
+    margin-right: 12px;
+    justify-content: flex-end;
+  }
+  .header-right-section-button:first-child,
+  .header-right-section-button:nth-child(2) {
+    display: none;
+  }
+  .header-center-section input {
+    display: none;
+  }
+  .header-center-section .search-button {
+    margin-left: initial;
+  }
+  .header-left-section {
+    margin-right: 12px;
+    gap: 12px;
+  }
+  .header-right-section {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-left-section .header-burger-menu-button {
+    display: none;
+  }
+  .header-right-section-button:not(:last-child) {
+    display: none;
+  }
+}
