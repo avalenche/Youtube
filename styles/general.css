@@ -33,7 +33,7 @@ body {
   color: var(--text-color-grey);
   font-family: var(--font-family);
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1;
   padding: 104px 0 0 245px;
 }
 
@@ -45,6 +45,11 @@ a,
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   body {

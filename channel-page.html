@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YouTube Redesign Concept" />
+    <title>YouTube Redesign Concept - channel-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left-section">
+        <button class="header-burger-menu-button">
+          <img src="icons/burger-menu-icon.svg" alt="Menu Icon" />
+        </button>
+        <a class="header-left-section-logo channel-page" href="./index.html">
+          <img src="icons/youtube-logo-black-icon.svg" alt="YouTube Logo" />
+        </a>
+        <div class="header-left-section-simple-logo-container">
+          <a class="header-left-section-logo" href="./index.html">
+            <img src="icons/youtube-simple.svg" alt="YouTube Logo" />
+          </a>
+          <span>Margaret Phelps</span>
+        </div>
+      </div>
+      <div class="header-center-section">
+        <input
+          id="search-bar"
+          name="search-bar"
+          class="search-bar"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="search-button">
+          <img src="icons/search-icon.svg" alt="Search Icon" />
+        </button>
+      </div>
+      <div class="header-right-section channel-page">
+        <button class="header-right-section-button">
+          <img src="icons/upload-icon.svg" alt="Upload Icon" />
+        </button>
+        <button class="header-right-section-button">
+          <img src="icons/youtube-apps-icon.svg" alt="Apps Icon" />
+        </button>
+        <button
+          class="header-right-section-button notifications-icon-container"
+        >
+          <img src="icons/notifications-icon.svg" alt="Notifications Icon" />
+          <div class="notifications-counter">3</div>
+        </button>
+        <button class="header-right-section-button profile-button">
+          <img
+            class="user-profile"
+            src="img/current-user-picture.png"
+            alt="Profile Icon"
+          />
+        </button>
+      </div>
+      <div class="small-burger">
+        <button class="header-small-burger-menu-button">
+          <img src="icons/small-burger-menu-icon.svg" alt="Menu Icon" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Aside -->
+      <aside class="sidebar">
+        <nav class="main-navigation">
+          <ul class="main-navigation-list-primary">
+            <li>
+              <a class="main-navigation-home" href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/home-icon.svg"
+                  alt="Home Icon"
+                /><span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/trending-icon.svg"
+                  alt="Trending Icon"
+                /><span>Trending</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/subscriptions-icon.svg"
+                  alt="Subscriptions Icon"
+                /><span>Subscriptions</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/library-icon.svg"
+                  alt="Library Icon"
+                /><span>Library</span></a
+              >
+            </li>
+          </ul>
+          <ul class="main-navigation-list-library">
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/library-icon.svg"
+                  alt="Library Icon"
+                /><span>Library</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/history-icon.svg"
+                  alt="History Icon"
+                /><span>History</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/watch-later-icon.svg"
+                  alt="Watch Later Icon"
+                /><span>Watch Later</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/favorites-icon.svg"
+                  alt="Favorites Icon"
+                /><span>Favorites</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/liked-videos-icon.svg"
+                  alt="Liked Videos Icon"
+                /><span>Liked videos</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/music-icon.svg"
+                  alt="Music Icon"
+                /><span>Music</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="icon-navigation"
+                  src="icons/games-icon.svg"
+                  alt="Games Icon"
+                /><span>Games</span></a
+              >
+            </li>
+          </ul>
+          <button class="main-navigation-button-show-more">
+            <span class="show-more-icon">
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                />
+              </svg>
+            </span>
+            Show More
+          </button>
+        </nav>
+        <section class="subscriptions">
+          <h2>Subscriptions</h2>
+          <ul class="subscriptions-list">
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/gussie-singleton.png"
+                  alt="user icon"
+                />Gussie Singleton</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/nora-francis.png"
+                  alt="user icon"
+                />Nora Francis</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/belle-briggs.png"
+                  alt="user icon"
+                />Belle Briggs</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/eunice-cortez.png"
+                  alt="user icon"
+                />Eunice Cortez</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/emma-hanson.png"
+                  alt="user icon"
+                />Emma Hanson</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="subscriptions-user-icon"
+                  src="img/leah-berry.png"
+                  alt="user icon"
+                />Leah Berry</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="sidebar-settings-section">
+          <button>
+            <img
+              class="icon-navigation"
+              src="icons/settings-icon.svg"
+              alt="Settings Icon"
+            />Settings
+          </button>
+        </section>
+      </aside>
+      <!-- End Aside -->
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Channel Header -->
+        <section class="channel-header-section">
+          <div class="channel-banner-container">
+            <img
+              class="channel-banner"
+              src="img/margaret-phelps-channel-banner.png"
+              alt="Channel Banner"
+              loading="lazy"
+            />
+          </div>
+          <div class="channel-info-section">
+            <div class="channel-info-left-section">
+              <div class="channel-profile-icon-container">
+                <img
+                  class="channel-profile-icon"
+                  src="img/margaret-phelps.png"
+                  alt="Channel Profile Icon"
+                />
+              </div>
+              <div class="channel-details">
+                <h1 class="channel-name">Margaret Phelps</h1>
+                <p class="subscribers-count">245K subscribed</p>
+              </div>
+            </div>
+            <div class="channel-info-right-section">
+              <button class="notification-button">
+                <img
+                  src="icons/notifications-icon.svg"
+                  alt="Notification Bell Icon"
+                />
+              </button>
+              <button class="subscribe-button">Subscribe 2.3m</button>
+            </div>
+          </div>
+        </section>
+        <!-- End Channel Header -->
+        <section class="channel-navigation-section">
+          <div>
+            <div class="channel-navigation-container">
+              <nav class="channel-navigation-bar">
+                <ul class="channel-navigation-list">
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Playlists</a></li>
+                  <li><a href="#">Channels</a></li>
+                  <li><a href="#">Discussion</a></li>
+                  <li><a href="#">About</a></li>
+                  <li>
+                    <button>
+                      <img src="icons/search-icon.svg" alt="Search Icon" />
+                    </button>
+                  </li>
+                  <li>
+                    <button class="">
+                      <span class="show-more-icon">
+                        <svg
+                          width="14"
+                          height="8"
+                          viewBox="0 0 14 8"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="channel-video-cards-container">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/margaret-phelps-home.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">7:36</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">
+                  Choosing The Best Audio Player Software For Your Computer
+                </h3>
+                <p class="video-text">
+                  Your cheap internet-based banner advertising will become one
+                  of the sought for ads there are. Today, the world of Internet
+                  advertising is rapidly evolving beyond banner ads and
+                  intrusive pop-ups. Bayles A common medium for advertising on
+                  the Internet is the use of banner ads.
+                </p>
+                <p class="video-stats">
+                  11k views <span>&#8226;</span> 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <section class="channel-page-recommended-channels">
+            <h2>Recommended channel</h2>
+            <ul class="subscriptions-list">
+              <li>
+                <a href="#"
+                  ><img src="img/flora-benson.png" alt="user icon" />Flora
+                  Benson</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/violet-cobb.png" alt="user icon" />Violet
+                  Cobb</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/phillip-mullins.png" alt="user icon" />Phillip
+                  Mullins</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- Video Section -->
+        <section class="video-section">
+          <div class="video-section-header">
+            <div class="video-author-info">
+              <div class="video-author-icon">
+                <img src="img/dollie-blair-icon.png" alt="Dollie Blair Icon" />
+              </div>
+              <h2 class="video-author-name">Dollie Blair</h2>
+            </div>
+            <div class="video-section-navigation-buttons">
+              <button class="left-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="right-arrow-button">
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66931 5.25531L11.6193 0.305313C11.8704 0.0453564 12.2422 -0.0588996 12.5918 0.0326158C12.9415 0.124131 13.2145 0.397176 13.306 0.746806C13.3975 1.09644 13.2933 1.46824 13.0333 1.71931L7.37631 7.37631C6.98581 7.7667 6.35281 7.7667 5.96231 7.37631L0.305313 1.71931C0.0453564 1.46824 -0.0588996 1.09644 0.0326158 0.746806C0.124131 0.397176 0.397176 0.124131 0.746806 0.0326158C1.09644 -0.0588996 1.46824 0.0453564 1.71931 0.305313L6.66931 5.25531Z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="video-cards-container">
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/a-brief-historyh-of-creation.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">4:15</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">A Brief History Of Creation</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    80k views <span>&#8226;</span> 3 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/selecting-the-right.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">8:00</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Selecting The Right</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    123k views <span>&#8226;</span> 1 months ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/asteroids.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">5:32</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Asteroids</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    43k views <span>&#8226;</span> 12 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/telescopes.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">6:40</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Telescopes 101</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    11k views <span>&#8226;</span> 6 months ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/medical-care.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">1:45</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Medical Care Is Just</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    18k views <span>&#8226;</span> 2 days ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+            <!-- Video Card -->
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  class="video-thumbnail"
+                  src="img/moon-gazing.png"
+                  alt="Video Thumbnail"
+                />
+                <div class="video-duration">2:12</div>
+              </div>
+              <div class="video-info">
+                <h3 class="video-title">Moon Gazing</h3>
+                <div class="channel-info">
+                  <p class="video-stats">
+                    67k views <span>&#8226;</span> 4 months ago
+                  </p>
+                  <p class="author">Dollie Blair</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Video Card -->
+          </div>
+        </section>
+        <!-- End Video Section -->
+      </div>
+      <!-- End Main Content -->
+    </main>
+  </body>
+</html>
