@@ -124,9 +124,9 @@
   cursor: pointer;
 }
 
-.video-thumbnail-container:hover {
+/* .video-thumbnail-container:hover {
   transform: scale(1.03);
-}
+} */
 .video-duration {
   position: absolute;
   bottom: 10px;
